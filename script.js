@@ -44,11 +44,10 @@ listContainer.addEventListener("click", function(e){
                     text: "Your task has been deleted.",
                     icon: "success"
                 });
-                    
                 e.target.parentElement.remove();
+                saveData()
             }
-        });
-        saveData()
+        }); 
     }
 }, false);
 
